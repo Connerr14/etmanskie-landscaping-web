@@ -220,7 +220,19 @@ footer p {
 }
 /* Tablets to Small Desktops (≤992px) */
 @media (max-width: 992px) {
-  
+  .masthead h1 {
+    font-size: 2.5em;
+    margin-top: auto;
+    margin-bottom: 0px;
+  }
+  .masthead a {
+    /* Less padding */
+    padding: 8px;
+    font-size: 1.1em;
+  }
+  .services {
+    height: auto;
+  }
 }
 
 /* Mobile Devices (≤768px) */
@@ -320,5 +332,71 @@ footer p {
     padding: 6px;
     margin: auto;
     margin-bottom: 0%;
+  }
+}
+/* Extra Large Desktops (≥1920px) */
+@media (min-width: 2000px) {
+  body {
+    font-size: 1.125rem; /* Slightly larger base font size for better readability */
+  }
+
+  header, .masthead, .services, footer {
+    padding: 2em 0; /* Increase padding for more spacious layout */
+  }
+
+  nav ul li {
+    padding: 0 1.5em; /* Increase spacing between navigation items */
+  }
+
+  nav img {
+    width: 150px; /* Larger logo */
+    height: 90px; /* Maintain aspect ratio */
+  }
+
+  .masthead {
+    height: 90vh; /* Larger masthead area */
+    padding-top: 4em; /* Adjust padding to better center content vertically */
+  }
+
+  #wrapper {
+    width: 60%; /* Wider content area */
+    height: 50vh; /* Increase height for more content or breathing space */
+    margin-top: 5rem; /* Adjust positioning */
+  }
+
+  .masthead h1 {
+    font-size: 4rem; /* Larger headline font size */
+  }
+
+  .masthead a, .getAQuote a {
+    font-size: 1.5rem; /* Larger button text */
+    padding: 1em 2em; /* Larger buttons */
+  }
+
+  .services ul {
+    justify-content: space-around; /* Adjust layout for more items or spacing */
+  }
+
+  .services li {
+    width: 25%; /* Adjust service item width for more columns */
+    padding: 2em; /* More padding for larger hover effects or content */
+  }
+
+  .getAQuote {
+    width: 60%; /* Larger quote section */
+    padding: 3em 0; /* More vertical padding */
+  }
+
+  footer {
+    padding: 2em 0; /* More padding for footer */
+  }
+
+  footer img {
+    width: 120px; /* Slightly larger footer logo */
+    height: 72px; /* Maintain aspect ratio */
+  }
+
+  #bottomWrapper {
+    justify-content: space-between; /* Adjust layout for additional content or spacing */
   }
 }
