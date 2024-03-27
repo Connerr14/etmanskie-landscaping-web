@@ -89,7 +89,7 @@ nav a {
   padding: 2em 0;
   margin-top: 0%;
   width: 100%;
-  height: 104vh;
+  height: 95vh;
 }
 
 .services ul {
@@ -138,13 +138,13 @@ nav a {
 /* Quote Section */
 .getAQuote {
   background: #066B3B;
-  width: 60%;
+  width: 40%;
   margin: 0 auto;
   border-radius: 10px;
   color: #fff;
   text-align: center;
   padding: 1em 0;
-  height: 18vh;
+  height: 15vh;
 }
 
 .getAQuote h2 {
@@ -232,14 +232,108 @@ footer p {
 }
 
 
-@media (max-width: 768px) {
-  .services li {
-      width: 45%;
-  }
 
-  nav ul li {
-      display: block;
-      margin-bottom: 0.5em;
-  }
+/* Tablets to Small Desktops (≤992px) */
+@media (max-width: 992px) {
+  
 }
 
+/* Mobile Devices (≤768px) */
+@media (max-width: 768px) {
+
+
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+
+  #wrapper {
+    width: 80%;
+    height: 50vh;
+    margin: 0 auto;
+    margin-top: 40px;
+    
+  }
+
+  #wrapper a {
+    padding: 12px;
+    text-align: center;
+  }
+
+  .masthead h1 {
+    font-size: 2.5em;
+    margin-top: auto;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+
+  .services ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto; /* Centers the UL within its parent */
+  }
+
+  .services li {
+    width: 75%;
+    height: 75%;
+    justify-content: center;
+    margin: 10px auto;
+    
+  }
+
+  footer  {
+
+  }
+
+  .services {
+    height: auto;
+  }
+
+  .getAQuote {
+    margin-top: 30px ;
+  }
+
+  /* Adjust the footer */
+  #bottomWrapper {
+    flex-direction: column;
+  }
+
+  footer img {
+    /* Move the logo to the center of the footer */
+    margin: 0 auto;
+
+    /* Move the image to the very bottom */
+    order: 1;
+  }
+
+  #socialMedia,
+  #reachUs,
+  #easyAccessLinks {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+
+  .getAQuote {
+    width: 70%;
+    margin-top: 2%;
+    padding: 4%;
+  }
+  
+  .getAQuote h2 {
+    font-size: 20px;
+  }
+  
+  .getAQuote a {
+    font-size: 15px;
+    padding: 6px;
+    margin: auto;
+    margin-bottom: 0%;
+  }
+}
