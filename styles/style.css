@@ -1,5 +1,3 @@
-
-
 body {
   font-family: 'Montserrat', sans-serif;
   color: #4A4A4A;
@@ -25,26 +23,27 @@ nav ul li {
   list-style: none;
 }
 
-
 nav img {
-  width: 170px;
-  height: 80px;
-  border-radius: 30px;
-
+  width: 10vw;
+  height: 5vw; 
+  border-radius: 20px;
+  margin-top: 1em;
+  min-width: 80px; 
+  min-height: 60px;
 }
 
 nav a {
   text-decoration: none;
   color: #fff;
   font-weight: 600;
-  font-size: 20px;
+  font-size: 1.25rem; 
 }
 
 /* Masthead */
 .masthead {
   background-image: url('../images/V2_2020-US061_DSC4773-2-2685357568.jpg');
   width: 100%;
-  height: 80vh;
+  height: 80vh; 
   background-position: 60%;
   background-size: cover;
   padding: 2em 0;
@@ -52,18 +51,16 @@ nav a {
 }
 
 #wrapper {
-  width: 54%;
-  height: 32vh;
-  margin: 125px auto;
-  /* Transparant black background */
+  width: 50%; 
+  height: 32vh; 
+  margin: 8rem auto; 
   background: rgba(4, 4, 4, 0.9);
   border-radius: 40px;
 }
 
 .masthead h1 {
-  font-size: 2.7em;
+  font-size: 3.125rem; 
   margin-bottom: 0.5em;
-  font-size: 50px;
   position: relative;
   top: 15%;
   color: white;
@@ -74,7 +71,7 @@ nav a {
   padding: 0.7em 1.5em;
   background: rgb(214,120,42);
   color: rgb(0, 0, 0);
-  font-size: 20px;
+  font-size: 1.25rem; 
   text-decoration: none;
   font-weight: 600;
   border-radius: 5px;
@@ -87,9 +84,9 @@ nav a {
   background-color: rgb(2, 49, 82);
   text-align: center;
   padding: 2em 0;
-  margin-top: 0%;
+  margin-top: 0;
   width: 100%;
-  height: 95vh;
+  height: 100vh; 
 }
 
 .services ul {
@@ -99,7 +96,7 @@ nav a {
 
 .services h2 {
   color: #ffffff;
-  font-size: 35px;
+  font-size: 2.1875rem; 
   margin-bottom: 1em;
 }
 
@@ -110,56 +107,52 @@ nav a {
 .services li {
   list-style: none;
   align-items: center;
-  width: 33.33%;
+  width: 33.33%; 
   margin: 1.5em;
-  background: #f5f5f5; /* Light grey */
-  padding: 1em;
-  border-radius: 5px;
+  background: #f5f5f5; 
 
+  padding: 1em; 
+  border-radius: 5px;
 }
 
 .services li img {
-  width: 100%;
-  height: auto;
-  
-  border-bottom: 5px solid #066B3B; /* Green */
+  width: 100%; 
+  height: auto; 
+  border-bottom: 5px solid #066B3B; 
 }
 
 .services h3 {
   color: #333;
-  margin: 0.5em 0;
+  margin: 0.5em 0; 
 }
 
 .services p {
-  font-size: 0.9em;
+  font-size: 1rem; 
 }
-
 
 /* Quote Section */
 .getAQuote {
   background: #066B3B;
-  width: 40%;
-  margin: 0 auto;
+  width: 50%; 
+  margin: 0 auto; /* Center align */
   border-radius: 10px;
   color: #fff;
   text-align: center;
-  padding: 1em 0;
-  height: 15vh;
+  padding: 2em 0; /* Increased padding for better spacing */
+  height: auto; /* Auto height for flexible content */
 }
 
 .getAQuote h2 {
-  margin: 4px auto 6px;
-
-  font-size: 30px;
-  /* margin-bottom: 1em; */
+  margin: 0.25em auto; 
+  font-size: 1.875rem; 
 }
 
 .getAQuote a {
   display: inline-block;
-  margin-top: 16px;
-  font-size: 20px;
-  padding: 0.5em 1.8em;
-  background: rgb(214,120,42); /* Green */
+  margin-top: 1em;
+  font-size: 1.25rem; 
+  padding: 0.625em 1.8em; 
+  background: rgb(214,120,42); 
   color: white;
   text-decoration: none;
   font-weight: 600;
@@ -170,41 +163,39 @@ nav a {
 footer {
   background: #263238; /* Dark grey-blue */
   color: white;
-  padding: 1em 0;
+  padding: 1em 0; /* Consistent padding */
   text-align: center;
-  margin: auto;
-  width: 100%;
-  height: auto;
 }
 
 footer img {
   position: relative;
   left: 1%;
-  width: 170px;
-  height: 80px;
-  border-radius: 30px;
-  margin-top: 60px;
+  width: 10vw; 
+  height: 5vw; 
+  border-radius: 20px;
+  margin-top: 1em; 
+  min-width: 80px; 
+  min-height: 60px;
 }
 
 footer a {
   color: white;
   text-decoration: none;
   display: block;
-  margin-bottom: 0.5em;
+  margin-bottom: 0.5em; 
 }
 
 footer h4 {
-  margin-bottom: 12px;
+  margin-bottom: 1.2rem; 
 }
 
-
 footer li {
-  font-size: 0.8em;
+  font-size: 0.8rem; 
   list-style: none;
 }
 
 footer p {
-  font-size: 0.8em;
+  font-size: 0.8rem; 
 }
 
 #bottomWrapper {
@@ -215,12 +206,10 @@ footer p {
 
 #easyAccessLinks ul {
   padding: 0;
-  margin: 0 auto; 
-  list-style-type: none; 
-  text-align: center; 
+  margin: 0 auto;
+  list-style-type: none;
+  text-align: center;
 }
-
-
 
 #socialMedia,
 #reachUs,
@@ -228,11 +217,7 @@ footer p {
   display: inline-block;
   margin-right: 2em;
   flex: 1;
-  
 }
-
-
-
 /* Tablets to Small Desktops (≤992px) */
 @media (max-width: 992px) {
   
@@ -252,16 +237,12 @@ footer p {
 
   #wrapper {
     width: 80%;
-    height: 50vh;
+    height: 35vh;
     margin: 0 auto;
     margin-top: 40px;
     
   }
 
-  #wrapper a {
-    padding: 12px;
-    text-align: center;
-  }
 
   .masthead h1 {
     font-size: 2.5em;
@@ -270,6 +251,11 @@ footer p {
     text-align: center;
   }
 
+  .masthead a {
+    /* Less padding */
+    padding: 6px;
+    font-size: 1em;
+  }
 
   .services ul {
     flex-direction: column;
@@ -287,16 +273,15 @@ footer p {
     
   }
 
-  footer  {
-
-  }
-
   .services {
     height: auto;
   }
+  .services li {
+    padding: 0.7em;
+  }
 
   .getAQuote {
-    margin-top: 30px ;
+    margin-top: 30px;
   }
 
   /* Adjust the footer */
