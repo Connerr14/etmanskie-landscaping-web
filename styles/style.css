@@ -43,7 +43,7 @@ nav a {
 .masthead {
   background-image: url('../images/V2_2020-US061_DSC4773-2-2685357568.jpg');
   width: 100%;
-  height: 80vh; 
+  height: 60vh; 
   background-position: 60%;
   background-size: cover;
   padding: 2em 0;
@@ -52,7 +52,7 @@ nav a {
 
 #wrapper {
   width: 50%; 
-  height: 32vh; 
+  height: 25vh; 
   margin: 8rem auto; 
   background: rgba(4, 4, 4, 0.9);
   border-radius: 40px;
@@ -86,7 +86,7 @@ nav a {
   padding: 2em 0;
   margin-top: 0;
   width: 100%;
-  height: 100vh; 
+  height: 104vh; 
 }
 
 .services ul {
@@ -170,6 +170,7 @@ footer {
 footer img {
   position: relative;
   left: 1%;
+  /* top: 0%; */
   width: 10vw; 
   height: 5vw; 
   border-radius: 20px;
@@ -218,26 +219,20 @@ footer p {
   margin-right: 2em;
   flex: 1;
 }
-/* Tablets to Small Desktops (≤992px) */
-@media (max-width: 992px) {
-  .masthead h1 {
-    font-size: 2.5em;
-    margin-top: auto;
-    margin-bottom: 0px;
-  }
-  .masthead a {
-    /* Less padding */
-    padding: 8px;
-    font-size: 1.1em;
-  }
-  .services {
-    height: auto;
-  }
-}
 
-/* Mobile Devices (≤768px) */
-@media (max-width: 768px) {
+/* Small Mobile Devices (≤320px) */
+@media (max-width: 320px) {
+  #wrapper h1 {
+    font-size: 1.7em;
+  }
 
+  section #wrapper  {
+    height: 18vh;
+    margin-top: 60px;
+  }
+  .masthead {
+    height: 35vh;
+  }
 
   nav ul {
     flex-direction: column;
@@ -249,7 +244,7 @@ footer p {
 
   #wrapper {
     width: 80%;
-    height: 35vh;
+    height: 25vh;
     margin: 0 auto;
     margin-top: 40px;
     
@@ -334,69 +329,230 @@ footer p {
     margin-bottom: 0%;
   }
 }
-/* Extra Large Desktops (≥1920px) */
-@media (min-width: 2000px) {
-  body {
-    font-size: 1.125rem; /* Slightly larger base font size for better readability */
-  }
 
-  header, .masthead, .services, footer {
-    padding: 2em 0; /* Increase padding for more spacious layout */
-  }
 
-  nav ul li {
-    padding: 0 1.5em; /* Increase spacing between navigation items */
-  }
-
-  nav img {
-    width: 150px; /* Larger logo */
-    height: 90px; /* Maintain aspect ratio */
-  }
-
-  .masthead {
-    height: 90vh; /* Larger masthead area */
-    padding-top: 4em; /* Adjust padding to better center content vertically */
-  }
-
-  #wrapper {
-    width: 60%; /* Wider content area */
-    height: 50vh; /* Increase height for more content or breathing space */
-    margin-top: 5rem; /* Adjust positioning */
+@media (min-width: 481px) and (max-width: 768px) {
+  footer img {
+    left: 18%;
+    /* Now move it down */
+    top: 5.3em;
   }
 
   .masthead h1 {
-    font-size: 4rem; /* Larger headline font size */
+    height: 20vh;
+    font-size: 2.4em;
   }
 
-  .masthead a, .getAQuote a {
-    font-size: 1.5rem; /* Larger button text */
-    padding: 1em 2em; /* Larger buttons */
+  .masthead #wrapper a {
+    top: -20%;
+  }
+
+  .services {
+    height: 82vh;
+  }
+
+  
+}
+
+@media (min-width: 769px) and (max-width: 1024px), (orientation: landscape){
+  .masthead a {
+    top: 16%;
+  }
+
+  .masthead h1 {
+    font-size: 2.4em;
+  }
+
+  .services {
+    height: 82vh;
+  }
+
+  .section #getAQuote {
+    text-align: center;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+/* Mobile Devices (≤480px) */
+@media (min-width: 321px) and (max-width: 480px) {
+
+
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
+
+
+  #wrapper {
+    width: 80%;
+    height: 25vh;
+    margin: 0 auto;
+    margin-top: 40px;
+    
+  }
+
+
+  .masthead h1 {
+    font-size: 2.5em;
+    margin-top: auto;
+    margin-bottom: 0px;
+    text-align: center;
+  }
+
+  .masthead a {
+    /* Less padding */
+    padding: 6px;
+    font-size: 1em;
   }
 
   .services ul {
-    justify-content: space-around; /* Adjust layout for more items or spacing */
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 90%;
+    margin: 0 auto; /* Centers the UL within its parent */
   }
 
   .services li {
-    width: 25%; /* Adjust service item width for more columns */
-    padding: 2em; /* More padding for larger hover effects or content */
+    width: 75%;
+    height: 75%;
+    justify-content: center;
+    margin: 10px auto;
+    
+  }
+
+  .services {
+    height: auto;
+  }
+  .services li {
+    padding: 0.7em;
   }
 
   .getAQuote {
-    width: 60%; /* Larger quote section */
-    padding: 3em 0; /* More vertical padding */
+    margin-top: 30px;
   }
 
-  footer {
-    padding: 2em 0; /* More padding for footer */
+  /* Adjust the footer */
+  #bottomWrapper {
+    flex-direction: column;
   }
 
   footer img {
-    width: 120px; /* Slightly larger footer logo */
-    height: 72px; /* Maintain aspect ratio */
+    /* Move the logo to the center of the footer */
+    margin: 0 auto;
+
+    /* Move the image to the very bottom */
+    order: 1;
   }
 
-  #bottomWrapper {
-    justify-content: space-between; /* Adjust layout for additional content or spacing */
+  #socialMedia,
+  #reachUs,
+  #easyAccessLinks {
+    margin-right: 0;
+    margin-bottom: 1em;
+  }
+
+
+  .getAQuote {
+    width: 70%;
+    margin-top: 2%;
+    padding: 4%;
+  }
+  
+  .getAQuote h2 {
+    font-size: 20px;
+  }
+  
+  .getAQuote a {
+    font-size: 15px;
+    padding: 6px;
+    margin: auto;
+    margin-bottom: 0%;
   }
 }
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  #wrapper {
+    width: 70%;
+  }
+
+  .masthead a {
+    font-size: 1.7em;
+  }
+
+  .masthead h1 {
+    font-size: 3.185em;
+  }
+
+  nav a {
+    font-size: 1.35em;
+  }
+
+  nav img {
+    width: 12vw;
+    height: 7vw;
+  }
+
+  section .services {
+    height: 83vh;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1600px) {
+  #wrapper {
+    width: 60%;
+    height: 32vh;
+  }
+
+  .masthead a {
+    font-size: 1.9em;
+    border-radius: 0.5em;
+  }
+
+  .masthead h1 {
+    font-size: 3.5em;
+  }
+
+  .services{
+    height: 104vh;
+  }
+
+  .services h2 {
+    font-size: 3.1em;
+  }
+
+  .services p {
+    font-size: 1.1em;
+  }
+
+  .services li {
+    margin: 1em;
+  }
+
+  .services h3 {
+    font-size: 2.5em;
+  
+  }
+
+  nav a {
+    font-size: 1.5em;
+  }
+
+  nav img {
+    width: 14vw;
+    height: 8vw;
+  }
+}
+
+
+
