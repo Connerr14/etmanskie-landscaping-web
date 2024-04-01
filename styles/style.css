@@ -613,6 +613,54 @@ footer p {
   margin-left: 2%;
 }
 
+/* Media queryies for the "our work" page */
+
+/* Small Mobile Devices (≤320px) */
+@media (max-width: 768px) {
+  #seeOurWork #gridContainer {
+    display: flex;
+    flex-direction: column;
+  }
+  #seeOurWork #gridContainer p {
+    font-size: 1.01em;
+    margin-top: 1em;
+    letter-spacing: normal;
+    /* Add border top black */
+    border-top: 3px solid #066B3B;
+    padding-top: 1em;
+  }
+
+  #seeOurWork main p:nth-of-type(1) {
+    margin-bottom: auto;
+    font-size: 1.1em;
+    margin-top: 0.3em;
+  }
+
+  #seeOurWork h1 {
+    font-size: 2.5em;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 1024px), (orientation: landscape){ 
+  #seeOurWork #gridContainer p {
+    margin-top: 0;
+  }
+}
+
+@media (min-width: 1024px) {
+  #seeOurWork #gridContainer p {
+    font-size: 1.3em;
+    /* Add more line height */
+    line-height: 2.0;
+  }
+}
+
+
+
+
+
+
 
 
 
