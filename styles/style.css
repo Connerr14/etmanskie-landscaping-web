@@ -547,7 +547,7 @@ footer p {
 
 #seeOurWork {
   text-align: center;
-  background-color: rgba(2, 49, 82, 0.2); /* Slightly darker shade of the header blue for even paragraphs */
+  background-color: rgba(2, 49, 82, 0.2); 
 }
 
 #seeOurWork h1 {
@@ -655,6 +655,74 @@ footer p {
     line-height: 2.0;
   }
 }
+/* -------------- End of "our work" page styling ------ */
+
+#aboutUsPage {
+    background-color: rgba(2, 49, 82, 0.2); 
+    text-align: center;
+}
+
+#aboutUsPage h1 {
+    font-size: 3.1875rem;
+    margin-bottom: .5em;
+    color: black;
+}
+
+#aboutUsPage main p {
+    font-size: 1.2rem;
+    width: 85%;
+    margin: 0 auto;
+    margin-bottom: 2.5em;
+    color: #000000;
+}
+
+#aboutUsPage h2 {
+    font-size: 2.5rem;
+    margin-bottom: 1em;
+    color: black;
+}
+
+#aboutUsPage #certTitle {
+    font-size: 2.5rem;
+    color: black
+}
+
+#aboutUsPage main section {
+  display: flex;
+  width: 80%;
+  margin: 2em auto;
+  justify-content: space-around;
+}
+
+#aboutUsPage main section img {
+  width: 80%;
+  height: auto;
+  margin: 1em;
+  border-radius: 8px;
+}
+
+@media (max-width: 768px) {
+  #aboutUsPage main section {
+    flex-direction: column;
+  }
+
+  #aboutUsPage main h1, #aboutUsPage main h2{
+    font-size: 1.3em;
+  }
+
+  #aboutUsPage main p {
+    font-size: 0.9em;
+    width: 70%;
+  }
+
+  #aboutUsPage #certTitle {
+    font-size: 1.4em;
+  }
+
+}
+
+
+
 
 
 
