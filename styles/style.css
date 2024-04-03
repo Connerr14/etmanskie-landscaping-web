@@ -1,5 +1,6 @@
+/* Setting some global styles */
 body {
-  font-family: 'Montserrat', sans-serif;
+  font-family: 'Montserrat',  sans-serif;
   color: #4A4A4A;
   line-height: 1.6;
   margin: 0;
@@ -7,22 +8,42 @@ body {
   background: #fff;
 }
 
+/* Making the headers a different font as to the body text */
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Playfair Display', serif;
+}
+
+/* Making sure the footer and header headings are Montserrat as they are easier to read this way  */
+nav h1, nav h2, nav h3, nav h4, nav h5, nav h6,
+footer h1, footer h2, footer h3, footer h4, footer h5, footer h6 {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
 /* Header and Navigation */
 header {
   background-color: rgb(2, 49, 82); /* Dark grey-blue */
   padding: 0.1em 0;
 }
 
+/* Add a hover effect to all links */
+a:hover {
+  color: #066B3B;
+}
+
+/* Making the navigation a flex box */
 nav ul {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
 }
 
+/* Taking away bullet points */
 nav ul li {
   list-style: none;
 }
 
+/* Styling the logo image */
 nav img {
   width: 10vw;
   height: 5vw; 
@@ -32,6 +53,7 @@ nav img {
   min-height: 60px;
 }
 
+/* Styling the navigation links */
 nav a {
   text-decoration: none;
   color: #fff;
@@ -39,9 +61,9 @@ nav a {
   font-size: 1.25rem; 
 }
 
-/* Masthead */
+/* Masthead styling */
 .masthead {
-  background-image: url('../images/V2_2020-US061_DSC4773-2-2685357568.jpg');
+  background-image: url('../images/main-masthead.jpg');
   width: 100%;
   height: auto; 
   background-position: 60%;
@@ -50,6 +72,7 @@ nav a {
   text-align: center;
 }
 
+/* Styling a wrapper div to contain and back shadow */
 #wrapper {
   width: 50%; 
   height: auto; 
@@ -59,6 +82,7 @@ nav a {
   border-radius: 40px;
 }
 
+/* Styling the h1 tag in the masthead */
 .masthead h1 {
   font-size: 3.125rem; 
   margin-bottom: 0.5em;
@@ -67,6 +91,7 @@ nav a {
   color: white;
 }
 
+/* Styling the anchor tag in the masthead */
 .masthead a {
   display: inline-block;
   padding: 0.7em 1.5em;
@@ -81,6 +106,8 @@ nav a {
 }
 
 /* Services Section */
+
+/* Setting global styles on the services page  */
 .services {
   background-color: rgb(2, 49, 82);
   text-align: center;
@@ -89,58 +116,57 @@ nav a {
   width: 100%;
   height: auto; 
 }
-
+/* Styling for the services section */
 .services ul {
-  display: flex;
+  display: flex; /* Display the list items in a row */
   width: 100%;
 }
 
 .services h2 {
-  color: #ffffff;
-  font-size: 2.1875rem; 
-  margin-bottom: 1em;
+  color: #ffffff; 
+  font-size: 2.1875rem; /* Set the font size */
+  margin-bottom: 1em; /* Set the bottom margin */
 }
 
 .services ul {
-  padding: 0;
+  padding: 0; /* Remove padding from the unordered list */
 }
 
 .services li {
-  list-style: none;
-  align-items: center;
-  width: 33.33%; 
-  margin: 1.5em;
+  list-style: none; /* Remove the bullet points from the list items */
+  align-items: center; /* Align the items vertically */
+  width: 33.33%; /* Set the width to one-third of the container */
+  margin: 1.5em; 
   background: #f5f5f5; 
-
-  padding: 1em; 
-  border-radius: 5px;
+  padding: 1em; /* Set the padding */
+  border-radius: 5px; /* Add rounded corners */
 }
 
 .services li img {
   width: 100%; 
   height: auto; 
-  border-bottom: 5px solid #066B3B; 
+  border-bottom: 5px solid #066B3B; /* Add a bottom border */
 }
 
 .services h3 {
-  color: #333;
-  margin: 0.5em 0; 
+  color: #333; 
+  margin: 0.5em 0; /* Set the top and bottom margin */
 }
 
 .services p {
   font-size: 1rem; 
 }
 
-/* Quote Section */
+/* Styling for the quote section */
 .getAQuote {
-  background: #066B3B;
+  background: #066B3B; /* Set the background color to the green used throughout the site */
   width: 50%; 
-  margin: 0 auto; /* Center align */
-  border-radius: 10px;
-  color: #fff;
-  text-align: center;
-  padding: 2em 0; /* Increased padding for better spacing */
-  height: auto; /* Auto height for flexible content */
+  margin: 0 auto; /* Center the element */
+  border-radius: 10px; /* Add rounded corners */
+  color: #fff; 
+  text-align: center; /* Center align the text */
+  padding: 2em 0; /* Set the padding */
+  height: auto; /* Set the height to auto so it auto changes*/
 }
 
 .getAQuote h2 {
@@ -149,41 +175,41 @@ nav a {
 }
 
 .getAQuote a {
-  display: inline-block;
-  margin-top: 1em;
-  font-size: 1.25rem; 
-  padding: 0.625em 1.8em; 
+  display: inline-block; /* Display as inline-block */
+  margin-top: 1em; /* Set top margin so there is more space */
+  font-size: 1.25rem;
+  padding: 0.625em 1.8em;
   background: rgb(214,120,42); 
-  color: white;
-  text-decoration: none;
-  font-weight: 600;
-  border-radius: 5px;
+  color: white; 
+  text-decoration: none; /* Remove underline */
+  font-weight: 600; /* Set the font weight */
+  border-radius: 5px; /* Add rounded corners */
 }
 
-/* Footer */
+/* Styling for the footer */
 footer {
-  background: #263238; /* Dark grey-blue */
-  color: white;
-  padding: 1em 0; /* Consistent padding */
-  text-align: center;
+  background: #263238;
+  color: white; 
+  padding: 1em 0; /* Set the padding */
+  text-align: center; /* Center align the text */
 }
 
 footer img {
-  position: relative;
-  left: 1%;
-  width: 10vw; 
-  height: 5vw; 
-  border-radius: 20px;
+  position: relative; /* Set the position to relative so that it can be moved about the page */
+  left: 1%; 
+  width: 10vw; /* Set the width */
+  height: 5vw; /* Set the height */
+  border-radius: 20px; /* Add rounded corners */
   margin-top: 1em; 
   min-width: 80px; 
-  min-height: 60px;
+  min-height: 60px; 
 }
 
 footer a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  margin-bottom: 0.5em; 
+  color: white; 
+  text-decoration: none; /* Remove underline */
+  display: block; /* Display as block */
+  margin-bottom: 0.5em; /* Set the bottom margin */
 }
 
 footer h3 {
@@ -191,8 +217,8 @@ footer h3 {
 }
 
 footer li {
-  font-size: 0.8rem; 
-  list-style: none;
+  font-size: 0.8rem; /* Set the font size */
+  list-style: none; /* Remove the bullet points */
 }
 
 footer p {
@@ -200,28 +226,29 @@ footer p {
 }
 
 #bottomWrapper {
-  display: flex;
-  justify-content: space-evenly;
-  flex-direction: row;
-  width: 100%;
+  display: flex; /* Make the wrapper a flex box */
+  justify-content: space-evenly; /* Space the items evenly */
+  flex-direction: row; /* Set the direction to row */
+  width: 100%; 
 }
 
 #easyAccessLinks ul {
-  padding: 0;
-  margin: 0 auto;
-  list-style-type: none;
-  text-align: center;
+  padding: 0; /* Remove padding from the unordered list */
+  margin: 0 auto; /* Center align the list */
+  list-style-type: none; /* Remove the bullet points */
+  text-align: center; 
 }
 
+/* Style the different footer elements */
 #socialMedia,
 #reachUs,
 #easyAccessLinks {
-  display: inline-block;
-  margin-right: 2em;
-  flex: 1;
+  display: inline-block; 
+  margin-right: 2em; 
+  flex: 1; /* Set the flex value */
 }
 
-/* Small Mobile Devices (≤320px) */
+/* Adding a media query for small screen sizes, changing structure, sizing and margin */
 @media (max-width: 320px) {
   #wrapper h1 {
     font-size: 1.7em;
@@ -330,11 +357,10 @@ footer p {
   }
 }
 
-
+/* Adding a media query for small to medium-small screen sizes, changing structure, positions, and sizing */
 @media (min-width: 481px) and (max-width: 768px) {
   footer img {
     left: 18%;
-    /* Now move it down */
     top: 5.3em;
   }
 
@@ -359,6 +385,7 @@ footer p {
   }
 }
 
+/* Adding a media query for medium to large viewports to change the font sizes, widths and margins */
 @media (min-width: 769px) and (max-width: 1024px), (orientation: landscape){
   .masthead a {
     top: 16%;
@@ -377,7 +404,7 @@ footer p {
   }
 }
 
-/* Mobile Devices (≤480px) */
+/* Adding styling for Mobile Devices changing structure, sizes and positions*/
 @media (min-width: 321px) and (max-width: 480px) {
 
 
@@ -476,6 +503,7 @@ footer p {
   }
 }
 
+/* Styling for medium to large screen sizes, changing widths and fonts sizes */
 @media (min-width: 1025px) and (max-width: 1200px) {
   #wrapper {
     width: 70%;
@@ -503,6 +531,7 @@ footer p {
   }
 }
 
+/* Adding a media query for large viewports to change the font sizes, widths and margins */
 @media (min-width: 1201px) and (max-width: 1600px) {
   #wrapper {
     width: 60%;
@@ -551,15 +580,17 @@ footer p {
 
 /* ----------------------- End of styling for home page ---------------------- */
 
+/* Adding global styling to the "our work" page */
 #seeOurWork {
   text-align: center;
   background-color: rgb(2, 49, 82);
 }
 
+/* Adding style to the main header */
 #seeOurWork h1 {
   font-size: 3.1875rem;
   margin-bottom: .5em;
-  color: white;
+  color: rgb(214,120,42);
   letter-spacing: 0.1em;
 }
 
@@ -579,6 +610,7 @@ footer p {
   color: #ffffff;
 }
 
+/* Styling the container and container elements of the page */
 #seeOurWork #gridContainer {
   display: grid;
   width:  auto;
@@ -610,7 +642,7 @@ footer p {
   text-align: center;
 }
 
-
+/* Declaring where each element lies in the grid */
 #image1 { grid-area: image1; }
 #p1 { grid-area: p1; }
 
@@ -620,13 +652,14 @@ footer p {
 #image3 { grid-area: image3; }
 #p3 { grid-area: p3; }
 
+/* Adding some margin to the footer a's to give the elements some room to breathe */
 #seeOurWork footer a {
   margin-left: 2%;
 }
 
-/* Media queryies for the "our work" page */
 
-/* Small Mobile Devices (≤320px) */
+/* Media queryies for the "our work" page.
+Small Mobile Devices (≤320px), change the structure, color and margin etc. */
 @media (max-width: 768px) {
   #seeOurWork #gridContainer {
     display: flex;
@@ -636,7 +669,7 @@ footer p {
     font-size: 1.01em;
     margin-top: 1em;
     letter-spacing: normal;
-    /* Add border top black */
+    /* Add border top green */
     border-top: 3px solid #066B3B;
     padding-top: 1em;
   }
@@ -653,12 +686,14 @@ footer p {
   }
 }
 
+/* A media query for medium to large viewports, changing the margin top of the paragraphs for more room */
 @media (min-width: 769px) and (max-width: 1024px), (orientation: landscape){ 
   #seeOurWork #gridContainer p {
     margin-top: 0;
   }
 }
 
+/* Increasing the font size and line height, for devices larger than 1024px */
 @media (min-width: 1024px) {
   #seeOurWork #gridContainer p {
     font-size: 1.3em;
@@ -668,16 +703,19 @@ footer p {
 }
 /* -------------- End of "our work" page styling ------ */
 
+/* Adding global styling to the about us page */
 #aboutUsPage {
     background-color: rgb(2, 49, 82);
     text-align: center;
 }
 
+/* Adding style to main header */
 #aboutUsPage h1 {
     font-size: 3.1875rem;
     margin-bottom: .5em;
 }
 
+/* Adding styling to the paragraph tags, setting margin, width, color, and size */
 #aboutUsPage main p {
     font-size: 1.2rem;
     width: 85%;
@@ -686,10 +724,12 @@ footer p {
     color: white;
 }
 
+/* Adding a green border */
 #aboutUsBodyWrapper {
   border: 5px solid #066B3B;
 }
 
+/* Styling headers by adding margin, color, and size */
 #aboutUsPage h2 {
     font-size: 2.5rem;
     margin-bottom: 1em;
@@ -701,6 +741,7 @@ footer p {
     color: rgb(214,120,42);
 }
 
+/* Styling the main section of the page, making it a flex box */
 #aboutUsPage main section {
   display: flex;
   width: 80%;
@@ -708,6 +749,7 @@ footer p {
   justify-content: space-around;
 }
 
+/* Styling the images on the page */
 #aboutUsPage main section img {
   width: 20%;
   height: auto;
@@ -715,6 +757,7 @@ footer p {
   border-radius: 8px;
 }
 
+/* Adding a masthead image and styling it */
 #aboutUsMastHead {
   background-image: url('../images/aboutUsMastHead.png');
   width: 100%;
@@ -727,19 +770,21 @@ footer p {
   place-items: center;
 }
 
+/* Adding a see-through layover that will allow the header to stand out */
 #aboutUsHeaderWrapper {
   background-color: rgba(4, 4, 4, 0.7);
   padding: 0.01em 10em;
   border-radius: 10px;
 }
 
+/* Styling the main header of the page */
 #aboutUsHeaderWrapper h1 {
   font-size: 4em;
   margin-bottom: .5em;
   color: white;
 }
 
-
+ /* Adding a media query for small to medium view ports, changing the layout and font sizes to best fit the screen size */
 @media (max-width: 768px) {
   #aboutUsPage main section {
     flex-direction: column;
@@ -777,7 +822,7 @@ footer p {
   }
 }
 
-
+/* Adding a media query for medium to large view-ports to change the font size */
 @media (min-width: 768px) and (max-width: 1024px), (orientation: landscape){
   #aboutUsPage main p {
     font-size: 1.1em;
@@ -788,6 +833,7 @@ footer p {
 
 /* ---------- End of about us page styling --------------------- */
 
+/* Adding some global styling to the contact page */
 #contactPage main {
   text-align: center;
   color: #000;
@@ -799,6 +845,7 @@ footer p {
   flex-direction: column;
 }
 
+/* Adding styling the main section of the page */
 #contactMainSection {
   width: 100%;
   height: auto;
@@ -814,6 +861,7 @@ footer p {
   margin-top: 1em;
 }
 
+/* Adding a masthead background image and styling it */
 #contactUsMastHead {
   background-image: url('../images/contact-masthead.jpg');
   width: 100%;
@@ -826,12 +874,14 @@ footer p {
   place-items: center;
 }
 
+/* Adding a see-through background so that the header stands out */
 #contactPageHeaderWrapper {
   background-color: rgba(4, 4, 4, 0.7);
   padding: 0.01em 8em;
   border-radius: 10px;
 }
 
+/* Adding styling to the headers */
 #contactPage h1 {
   font-size: 4.3em;
   margin-bottom: .5em;
@@ -845,6 +895,7 @@ footer p {
 
 }
 
+/* Styling the reach us directly section of the page, adding a flex container */
 #reachUsDirectlyWrapper {
   height: auto;
   margin: auto;
@@ -857,6 +908,7 @@ footer p {
   font-size: 1.2em;
 }
 
+/* Styling the form background */
 #contactPage #formWrapper {
   width: 70%;
   margin: 2em auto;
@@ -879,7 +931,7 @@ footer p {
 
 }
 
-
+/* Adding style to the form */
 #contactPage form label {
   font-size: 1.5em;
   color: #044f2b; 
@@ -895,6 +947,7 @@ form p {
   margin: 0 auto;
 }
 
+/* Making the checkbox be in a flex-container */
 #formCheckBoxes {
   display: flex;
   flex-direction: row;
@@ -924,7 +977,7 @@ form p {
   margin-top: 1em;
 }
 
-
+/* Add a media query for medium to large viewport sizes, rearranging the structure and changing font size */
 @media (min-width: 768px) and (max-width: 894px) {
   #contactPage #contactPageHeaderWrapper {
     padding: 0.01em 1em;
@@ -936,7 +989,7 @@ form p {
   }
 }
 
-/* Note, page works as intended at the other view-ports so no need to add more media queries */
+/* Adding a media query for small to medium viewport sizes, rearranging the structure and changing font size */
 @media (max-width: 768px) {
   #contactPageHeaderWrapper {
     padding: 0.02em 1.4em;
@@ -991,11 +1044,13 @@ form p {
 
 /* -------------- End of contact page styling --------------------- */
 
+/* Adding global styling */
 #servicePage {
   background-color: rgb(2, 49, 82);
   text-align: center;
 }
 
+/* Setting up a masthead for the page */
 #servicePage #servicesMastHead {
   background-image: url("../images/services-masthead.jpg");
   background-position: 60%;
@@ -1005,6 +1060,7 @@ form p {
   margin-bottom: auto;
 }
 
+/* Setting up a wrapper for the page, with a see through background */
 #servicePage #servicesWrapper {
   background: rgba(0, 0, 0, 0.7);
   width: 65%;
@@ -1014,6 +1070,7 @@ form p {
   border-radius: 10px;
 }
 
+/* Styling page headers */
 #servicesWrapper h1 {
   font-size: 4em;
   margin-bottom: .5em;
@@ -1027,6 +1084,7 @@ form p {
   color: white;
 }
 
+/* Styling the paragraph tags, setting size, font, and color */
 #servicePage main p {
   font-size: 1.2em;
   width: 85%;
@@ -1035,10 +1093,12 @@ form p {
   color: #fff;
 }
 
+/* Adding border */
 #productSection {
   border: 5px solid #066B3B;
 }
 
+/* Adding a filer look to the images */
 #servicePage #productSection img {
   width: 40%;
   height: 40%;
@@ -1046,11 +1106,12 @@ form p {
   filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
 }
 
-/* Get the last image of the product section */
+/* Getting the last image of the product section, and adding margin for more space */
 #servicePage #productSection img:last-of-type {
   margin-bottom: 2em;
 }
 
+/* A media query for small screens, resizes the wrapper and changes font and image size */
 @media (max-width: 333px) {
   #servicePage main #servicesWrapper h1 {
     font-size: 1.5em;
@@ -1069,7 +1130,7 @@ form p {
   }
 }
 
-
+/* A media query for medium screens, resizes the wrapper and changes font and image size */
 @media (min-width: 333px) and (max-width: 768px) {
   #servicePage #servicesWrapper {
     width: 80%;
