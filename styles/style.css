@@ -203,6 +203,7 @@ footer p {
   display: flex;
   justify-content: space-evenly;
   flex-direction: row;
+  width: 100%;
 }
 
 #easyAccessLinks ul {
@@ -350,7 +351,12 @@ footer p {
     height: auto;
   }
 
-  
+  nav ul {
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0;
+  }
 }
 
 @media (min-width: 769px) and (max-width: 1024px), (orientation: landscape){
@@ -695,16 +701,45 @@ footer p {
 }
 
 #aboutUsPage main section img {
-  width: 80%;
+  width: 20%;
   height: auto;
   margin: 1em;
   border-radius: 8px;
 }
 
-/* Note, page works as intended at the other view-ports so no need to add more media queries */
+#aboutUsMastHead {
+  background-image: url('../images/aboutUsMastHead.png');
+  width: 100%;
+  height: 20em; 
+  background-position: 60%;
+  background-size: cover;
+  padding: 2em 0;
+  text-align: center;
+  display: grid;
+  place-items: center;
+  margin-bottom: 4em;
+}
+
+#aboutUsHeaderWrapper {
+  background-color: rgba(4, 4, 4, 0.7);
+  padding: 0.01em 10em;
+  border-radius: 10px;
+}
+
+#aboutUsHeaderWrapper h1 {
+  font-size: 4em;
+  margin-bottom: .5em;
+  color: white;
+}
+
+
 @media (max-width: 768px) {
   #aboutUsPage main section {
     flex-direction: column;
+  }
+
+  #aboutUsPage main section img {
+    width: auto;
   }
 
   #aboutUsPage main h1, #aboutUsPage main h2{
@@ -720,7 +755,29 @@ footer p {
     font-size: 1.4em;
   }
 
+  #aboutUsPage main p {
+    font-size: 1em;
+  }
+  
+  main #aboutUsHeaderWrapper {
+    width: auto;
+    padding: 1em 4em;
+    margin: auto;
+  }
+  
+   #aboutUsPage main #aboutUsHeaderWrapper h1 {
+    font-size: 1.7em;
+  }
 }
+
+
+@media (min-width: 768px) and (max-width: 1024px), (orientation: landscape){
+  #aboutUsPage main p {
+    font-size: 1.1em;
+  }
+}
+
+
 
 /* ---------- End of about us page styling --------------------- */
 
@@ -792,8 +849,6 @@ footer p {
 #reachUsDirectlyWrapper p {
   font-size: 1.2em;
 }
-
-
 
 #contactPage #formWrapper {
   width: 70%;
@@ -927,13 +982,5 @@ form p {
   }
 }
 
-
-
-
-
-
-
-
-
-
+/* -------------- End of contact page styling --------------------- */
 
