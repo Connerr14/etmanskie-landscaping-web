@@ -553,13 +553,13 @@ footer p {
 
 #seeOurWork {
   text-align: center;
-  background-color: rgba(2, 49, 82, 0.2); 
+  background-color: rgb(2, 49, 82);
 }
 
 #seeOurWork h1 {
   font-size: 3.1875rem;
   margin-bottom: .5em;
-  color: rgb(2, 39, 66);
+  color: white;
   letter-spacing: 0.1em;
 }
 
@@ -568,10 +568,15 @@ footer p {
 
 }
 
+#seeOurWork main {
+  border: 5px solid #066B3B;
+}
+
+
 #seeOurWork main p:nth-of-type(1) {
   font-size: 1.5rem;
   margin-bottom: 2.5em;
-  color: #000000;
+  color: #ffffff;
 }
 
 #seeOurWork #gridContainer {
@@ -596,7 +601,7 @@ footer p {
 }
 
 #seeOurWork #gridContainer p {
-  color: #000000;
+  color: white;
   font-size: 1.2em;
   width: 100%;
   height: auto;
@@ -664,14 +669,13 @@ footer p {
 /* -------------- End of "our work" page styling ------ */
 
 #aboutUsPage {
-    background-color: rgba(2, 49, 82, 0.2); 
+    background-color: rgb(2, 49, 82);
     text-align: center;
 }
 
 #aboutUsPage h1 {
     font-size: 3.1875rem;
     margin-bottom: .5em;
-    color: black;
 }
 
 #aboutUsPage main p {
@@ -679,18 +683,22 @@ footer p {
     width: 85%;
     margin: 0 auto;
     margin-bottom: 2.5em;
-    color: #000000;
+    color: white;
+}
+
+#aboutUsBodyWrapper {
+  border: 5px solid #066B3B;
 }
 
 #aboutUsPage h2 {
     font-size: 2.5rem;
     margin-bottom: 1em;
-    color: black;
+    color: white;
 }
 
 #aboutUsPage #certTitle {
     font-size: 2.5rem;
-    color: black
+    color: rgb(214,120,42);
 }
 
 #aboutUsPage main section {
@@ -717,7 +725,6 @@ footer p {
   text-align: center;
   display: grid;
   place-items: center;
-  margin-bottom: 4em;
 }
 
 #aboutUsHeaderWrapper {
@@ -821,12 +828,12 @@ footer p {
 
 #contactPageHeaderWrapper {
   background-color: rgba(4, 4, 4, 0.7);
-  padding: 0.01em 10em;
+  padding: 0.01em 8em;
   border-radius: 10px;
 }
 
 #contactPage h1 {
-  font-size: 6.0em;
+  font-size: 4.3em;
   margin-bottom: .5em;
   color: white;
 }
@@ -984,3 +991,104 @@ form p {
 
 /* -------------- End of contact page styling --------------------- */
 
+#servicePage {
+  background-color: rgb(2, 49, 82);
+  text-align: center;
+}
+
+#servicePage #servicesMastHead {
+  background-image: url("../images/services-masthead.jpg");
+  background-position: 60%;
+  background-size: cover;
+  height: auto;
+  padding: 4em;
+  margin-bottom: auto;
+}
+
+#servicePage #servicesWrapper {
+  background: rgba(0, 0, 0, 0.7);
+  width: 65%;
+  text-align: center;
+  margin: auto;
+  padding: 0.1em 0em;
+  border-radius: 10px;
+}
+
+#servicesWrapper h1 {
+  font-size: 4em;
+  margin-bottom: .5em;
+  color: white;
+  text-align: center;
+}
+
+#servicePage h2 {
+  font-size: 2.3em;
+  margin-bottom: 1em;
+  color: white;
+}
+
+#servicePage main p {
+  font-size: 1.2em;
+  width: 85%;
+  margin: 0 auto;
+  margin-bottom: 2.5em;
+  color: #fff;
+}
+
+#productSection {
+  border: 5px solid #066B3B;
+}
+
+#servicePage #productSection img {
+  width: 40%;
+  height: 40%;
+  border-radius: 10px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.5));
+}
+
+/* Get the last image of the product section */
+#servicePage #productSection img:last-of-type {
+  margin-bottom: 2em;
+}
+
+@media (max-width: 333px) {
+  #servicePage main #servicesWrapper h1 {
+    font-size: 1.5em;
+  }
+
+  #servicePage #servicesWrapper {
+    width: 80%;
+  }
+
+  #servicePage h2 {
+    font-size: 1.7em;
+  }
+
+  #servicePage main p {
+    font-size: 1em;
+  }
+}
+
+
+@media (min-width: 333px) and (max-width: 768px) {
+  #servicePage #servicesWrapper {
+    width: 80%;
+  }
+
+  #servicePage #servicesWrapper h1 {
+    font-size: 2.3em;
+  }
+
+  #servicePage h2 {
+    font-size: 1.7em;
+  }
+
+  #servicePage main p {
+    font-size: 1em;
+  }
+
+  #productSection img {
+    width: 80%;
+    height: 80%;
+  }
+}
