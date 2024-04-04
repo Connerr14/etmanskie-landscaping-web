@@ -406,8 +406,6 @@ footer p {
 
 /* Adding styling for Mobile Devices changing structure, sizes and positions*/
 @media (min-width: 321px) and (max-width: 480px) {
-
-
   nav ul {
     flex-direction: column;
     justify-content: center;
@@ -649,7 +647,7 @@ footer p {
 #image2 { grid-area: image2; }
 #p2 { grid-area: p2; }
 
-#image3 { grid-area: image3; }
+#imageOverlay { grid-area: image3; }
 #p3 { grid-area: p3; }
 
 /* Adding some margin to the footer a's to give the elements some room to breathe */
@@ -657,9 +655,45 @@ footer p {
   margin-left: 2%;
 }
 
+/* Adding a hover effect to the images */
+/* Create the image overlay */
+#imageOverlay {
+  grid-area: image3;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative;
+  justify-self: center;
+  align-self: center; 
+  width: fit-content; 
+  height: fit-content; 
+}
+
+#image3 {
+  display: block; 
+  width: 100%; /* Make the image expand to fit the container's width */
+  height: auto; /* Preserve the image's aspect ratio */
+}
+
+#imageOverlay::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.5); 
+  transition: opacity 0.5s ease; /* Smooth transition for the overlay */
+  opacity: 1;
+}
+
+#imageOverlay:hover::before {
+  /* On hover, remove the overlay */
+  opacity: 0;
+}
+
+
 
 /* Media queryies for the "our work" page.
-Small Mobile Devices (≤320px), change the structure, color and margin etc. */
+ (≤768x), change the structure, color and margin etc. */
 @media (max-width: 768px) {
   #seeOurWork #gridContainer {
     display: flex;
