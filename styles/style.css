@@ -988,9 +988,10 @@ footer p {
 
 /* Adding style to the form */
 #contactPage form label {
-  font-size: 1.5em;
+  font-size: 1em;
   color: black;
 }
+
 
 form p {
   margin-bottom: 0.7em;
@@ -1011,7 +1012,7 @@ form #serviceOfInterest {
 /* Making the checkbox be in a flex-container */
 #formCheckBoxes {
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-around;
   margin: 1em 2em;
   font-size: 1em;
@@ -1103,11 +1104,9 @@ form #serviceOfInterest {
   #contactPage a {
     font-size: 1em;
   }
-
-  #formCheckBoxes {
-    flex-direction: column;
-  }
 }
+
+
 
 /* -------------- End of contact page styling --------------------- */
 
