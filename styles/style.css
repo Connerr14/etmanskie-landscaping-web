@@ -722,6 +722,11 @@ footer p {
     display: flex;
     flex-direction: column;
   }
+
+  #imageOverlay::before {
+    background: rgba(0, 0, 0, 0);
+  }
+
   #seeOurWork #gridContainer p {
     font-size: 1.01em;
     margin-top: 1em;
